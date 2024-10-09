@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div>
+        <h1 class="heading">Image Gallery</h1>
+    </div>
+
+    <div class="gallery-container">
+        <div class="image-grid">
+          <div class="gallery-image-container" onclick="openModal(0)">
+            <img src="image1.avif" alt="Image 1" class="gallery-image">
+            <div class="image-overlay">
+              <div class="image-overlay-text">Image 1</div>
+            </div>
+          </div>
+      
+          <div class="gallery-image-container" onclick="openModal(1)">
+            <img src="image2.avif" alt="Image 2" class="gallery-image">
+            <div class="image-overlay">
+              <div class="image-overlay-text">Image 2</div>
+            </div>
+          </div>
+      
+          <div class="gallery-image-container" onclick="openModal(2)">
+            <img src="image3.avif" alt="Image 3" class="gallery-image">
+            <div class="image-overlay">
+              <div class="image-overlay-text">Image 3</div>
+            </div>
+          </div>
+          <div class="gallery-image-container" onclick="openModal(2)">
+            <img src="image3.avif" alt="Image 3" class="gallery-image">
+            <div class="image-overlay">
+              <div class="image-overlay-text">Image 3</div>
+            </div>
+          </div>
+          <div class="gallery-image-container" onclick="openModal(2)">
+            <img src="image2.avif" alt="Image 3" class="gallery-image">
+            <div class="image-overlay">
+              <div class="image-overlay-text">Image 3</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Modal Structure -->
+      <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="caption" id="modalCaption"></div>
+      
+        <!-- Navigation Controls -->
+        <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+        <span class="next" onclick="changeImage(1)">&#10095;</span>
+      </div>
+      
+        
+      
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
