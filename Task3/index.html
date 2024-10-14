@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="project-heading">
+        <h1>Music Player</h1>
+    </div>
+    <div class="player-container">
+        <div class="track-info">
+            <img id="track-image" src="images/song1.jpg" alt="Track Image" class="track-image">
+            <h3 id="track-title" class="track-title">Track Title</h3>
+        </div>
+
+        <div class="controls">
+            <button id="prev-btn" class="control-btn">⏮️</button>
+            <button id="play-pause-btn" class="control-btn">▶️</button>
+            <button id="next-btn" class="control-btn">⏭️</button>
+            <button id="shuffle-btn" class="control-btn">🔀</button>
+            <button id="repeat-btn" class="control-btn">🔁</button>
+        </div>
+
+        <div class="progress-container">
+            <span id="current-time" class="time">0:00</span>
+            <input type="range" id="progress-bar" min="0" value="0" class="progress-bar">
+            <span id="total-time" class="time">0:00</span>
+        </div>
+
+        <div class="volume-speed-controls">
+            <label for="volume-slider">Volume</label>
+            <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+            <label for="speed-slider">Speed</label>
+            <input type="range" id="speed-slider" min="0.5" max="2" step="0.1" value="1">
+        </div>
+
+        <div class="playlist">
+            <h4>Playlist</h4>
+            <ul id="song-list"></ul>
+        </div>
+
+        <div class="dark-mode-toggle">
+            <label for="dark-mode">Dark Mode</label>
+            <input type="checkbox" id="dark-mode">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
